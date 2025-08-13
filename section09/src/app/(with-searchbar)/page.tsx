@@ -39,6 +39,8 @@ async function RecoBooks() {
   }
 
   const recoBooks: BookData[] = await response.json();
+
+  console.log(recoBooks);
   return (
     <div>
       {recoBooks.map((book) => (
